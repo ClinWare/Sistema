@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/teste.css">
+    <title>Login</title>
+</head>
+<body>
+   
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="#">
+			<h1>Criar conta</h1>
+			<div class="social-container">
+			
+			</div>
+			
+			<input type="text" id="criarNome" placeholder="Nome da empresa"></input>
+			<input type="email" id="criarEmail" placeholder="Email Organizacional"></input>
+			<input type="password" id="criarSenha"
+			placeholder="Senha">
+				</input>
+			<button onclick="criar(); return false">Cadastrar</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<h1>Login </h1>
+			<div class="social-container">
+
+			</div>
+			<input id="email" type="email" placeholder="Email Organizacional" />
+			<input id="senha" type="password" placeholder="Senha"/>
+			<a class="forgot" href="#">Esqueceu a sua senha?</a>
+			<button onclick="logar(); return false">Entrar</button>
+		</form>
+	</div>
+	<div class="painel-container">
+		<div class="painel">
+			<div class="painel-panel painel-left">
+				<img src="./src/img/logo-clinware-sem-nome.png" alt="">
+				<h1>Bem vindo a ClinWare!</h1>
+				<p>Se já estiver cadastrado em nosso sistema é só entrar aqui!</p>
+				<button class="ghost" id="signIn">Entrar</button>
+			</div>
+			<div class="painel-panel painel-right">
+				<img src="./src/img/logo-clinware.png" alt="">
+				<h2>Você ainda não tem conta?</h2>
+				<p></p>
+				<button class="ghost" id="signUp">Cadastrar</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="./src/js/teste.js"></script>
+</body>
+</html>
