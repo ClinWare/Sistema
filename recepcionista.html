@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./src/css/aside.css">
+    <link rel="stylesheet" href="./src/css/recepcionista.css">
+    <title>Recepcionista</title>
+</head>
+
+<body>
+    <nav class="menu-lateral">
+        <div class="menu">
+            <i class="bi bi-list" id="btn-abrir"></i>
+        </div>
+        <ul>
+            <li class="item-menu-medico ativo">
+                <a href="#">
+                    <span class="icon">
+                        <i class="bi bi-person-fill-add"></i>
+
+                        </i>
+                    </span>
+                    <span class="txt-link">
+                        Cadastrar paciente
+                    </span>
+                </a>
+            </li>
+            <li class="item-menu-medico">
+                <a href="recepcionista-criar.html">
+
+                    <span class="icon">
+                        <i class="bi bi-calendar-event-fill"></i>
+                    </span>
+                    <span class="txt-link">
+                        Criar agendamento
+                    </span>
+                </a>
+            </li>
+            <li class="item-menu-medico">
+                <a href="recepcionista-feitos.html">
+
+                    <span class="icon">
+                        <i class="bi bi-calendar-check-fill"></i>
+                    </span>
+                    <span class="txt-link">
+                        Agendamentos feitos
+                    </span>
+                </a>
+            </li>
+            <div class="bottom-aside">
+
+                <li class="item-menu bottom-item">
+
+                    <a href="recepcionista-conta.html">
+
+                        <span class="icon">
+                            <i class="bi bi-file-person"></i>
+                        </span>
+                        <span class="txt-link">
+                            Conta
+                        </span>
+                    </a>
+                </li>
+                <li class="item-menu">
+
+                    <a href="login.html">
+
+                        <span class="icon">
+                            <i class="bi bi-box-arrow-left"></i>
+                        </span>
+                        <span class="txt-link">
+                            Sair
+                        </span>
+                    </a>
+        </ul>
+        </li>
+        </div>
+        </ul>
+
+
+
+
+    </nav>
+
+    <main class="container">
+
+        <div class="text">
+            Cadastro
+        </div>
+        <form action="#">
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="text" required>
+                    <div class="underline"></div>
+                    <label for="">Primeiro nome:</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" required>
+                    <div class="underline"></div>
+                    <label for="">Último nome:</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="text" required>
+                    <div class="underline"></div>
+                    <label for="">Email:</label>
+                </div>
+                <div class="input-data">
+                    <input type="number" required>
+                    <div class="underline"></div>
+                    <label for="">Idade:</label>
+                </div>
+                <div class="input-data">
+                    <input type="number" required>
+                    <div class="underline"></div>
+                    <label for="">Carteirinha:</label>
+                </div>
+                <div class="input-data">
+                    <input type="number" required>
+                    <div class="underline"></div>
+                    <label for="">RG:</label>
+                </div>
+                <div class="input-data">
+                    <input type="number" required>
+                    <div class="underline"></div>
+                    <label for="">CPF:</label>
+                </div>
+
+            </div>
+
+            <div class="form-row">
+                <div class="input-data textarea">
+                    <textarea rows="8" cols="80" required></textarea>
+                    <br />
+                    <div class="underline"></div>
+                    <label for="">Observação:</label>
+                    <br />
+                    <a href="recepcionista-criar.html">
+                        <div class="form-row submit-btn">
+                            <div class="input-data">
+                                <div class="inner"></div>
+                                <input type="submit" value="Cadastrar">
+                            </div>
+                        </div>
+                    </a>
+        </form>
+
+    </main>
+    <script src="./src/js/menu.js"></script>
+</body>
+
+</html>

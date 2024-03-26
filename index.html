@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./src/css/landing.css">
+    <title>ClinWare</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navigation">
+            <a href="index.php?menuop=home" class="logo">
+                <span>Clin</span>Ware
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about">
+                        Sobre nós
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services">
+                        Serviços
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contatos">
+                        Contato
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="brk-btn">
+                        Entrar
+                    </a>
+                </li>
+            </ul>
+            <div class="menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- <?php
+
+        $menuop = (isset($_GET["menuop"]))?$_GET["menuop"]:"home";
+
+        switch($menuop)
+        {
+            case 'home' :
+                header("src/paginas/home/home.php");
+                break;
+            case 'contato' :
+                header("src/paginas/contato/contato.php");
+                break;
+            case 'about' :
+                header("src/paginas/about/about.php");
+                break;
+        }
+
+        ?> -->
+
+        <section class="home">
+            <div class="home-text">
+                <h4 class="text-h4">Seja bem-vindo á <span>Clin</span>Ware</h4>
+                <h1 class="text-h1"></h1>
+                <p>A nossa equipe acredita que a excelência é para todos!
+                    Sua consulta marcada sem estresse e sem esforço. </p>
+
+
+            </div>
+            <div class="home-img">
+                <img src="./src/img/logo-clinware.png" alt="">
+            </div>
+            <!-- <div class="slider">
+                    <div class="slides">
+                        <!-- Radio button do Slider -->
+            <!-- <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <input type="radio" name="radio-btn" id="radio4">
+
+
+                        <!-- Slide de imagens -->
+            <!-- <div class="slide first">
+                        <img id="figura" class="img-right" src="ferramentas.jpg" alt="Imagem 1">
+                        </div>
+                        <div class="slide">
+                        <img id="figura" class="img-right" src="doutora.jpg" alt="Imagem 2">
+                        </div>
+                        <div class="slide">
+                        <img id="figura" class="img-right" src="doutora-mascarada.jpg" alt="Imagem 3">
+                        <img id="figura" class="img-right" src="clinware fundo branco.png" alt="Imagem 4">
+                        </div> -->
+
+            <!-- Navegação paizao -->
+            <!-- <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                        </div>
+                    </div>
+
+                    <div class="manual-navigation">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                    </div>
+                </div> -->
+
+        </section>
+        <section id="about" class="segunda-section">
+            <h1 class="title">Sobre nós</h1>
+            <div>
+                <img class="coracao" src="./src/img/atendimento.jpg" alt="">
+                <p>
+                    A ClinWare tem como um de seus principais objetivos levar o mundo tech de vez para o dia a dia das
+                    clínicas médicas ao redor do país, facilitando o acesso dos pacientes ao seus dados e agendamento de
+                    consultas e exames e também agilizando e digitalizando processos diários pela parte dos médicos como
+                    o preenchimento de prontuários de papel que convenhamos é uma prática obsoleta.
+                </p>
+            </div>
+            <div>
+                <p>
+                    Temos como filosofia a excelência. Buscamos a excelência no tratamento de dados dos nossos
+                    colaboradores, buscamos a excelência quando o assunto é garantir a segurança no processamento de
+                    dados de nossos colaboradoes, buscamos excelência quando nos propomos em vir aqui e levar até VOCÊ o
+                    melhor do nosso software.
+
+                </p>
+                <img class="coracao" src="./src/img/doutora-mascarada.jpg" alt="">
+            </div>
+            <div>
+                <img class="coracao" src="./src/img/ferramentas.jpg" alt="">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam perspiciatis incidunt dolorem ipsa
+                    odit, fugit aliquam perferendis totam nostrum magnam voluptate molestias libero dolor, enim
+                    asperiores neque molestiae odio dolorum.
+                </p>
+            </div>
+        </section>
+        <section id="services" class="terceira-section">
+            <div class="card">
+                <div class="icon">
+                    <img src="./src/img/logo-clinware-sem-nome.png" alt="Logo">
+                </div>
+                <div class="content">
+                    <h1>Plano mensal</h1>
+                    <p>
+                        Nesse plano você usufrui do melhor do nosso software pagando uma assinatura mensal. Nesse plano
+                        você paga R$ 250,00 por mês com direito a acesso de todo nosso software.
+                </div>
+                <button id="read_button">Ler mais</button>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <img src="./src/img/logo-clinware-sem-nome.png" alt="Logo">
+                </div>
+                <div class="content">
+                    <h1>Plano Trimestral</h1>
+                    <p>
+                        Nesse plano você usufrui do melhor do nosso software pagando uma assinatura trimestral. Nesse
+                        plano você economiza em relação ao plano mensal e paga R$ 650,00 a cada três meses com direito a
+                        acesso de todo nosso software.
+
+                </div>
+                <button id="read_button">Ler mais</button>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <img src="./src/img/logo-clinware-sem-nome.png" alt="Logo">
+                </div>
+                <div class="content">
+                    <h1>Plano Semestral</h1>
+                    <p>
+                        Nesse plano você usufrui do melhor do nosso software pagando uma assinatura semestral. Nesse
+                        plano você economiza em relação ao plano trimestral e paga R$ 1200,00 a cada seis meses com
+                        direito a acesso de todo nosso software.
+                </div>
+                <button id="read_button">Ler mais</button>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <img src="./src/img/logo-clinware-sem-nome.png" alt="Logo">
+                </div>
+                <div class="content">
+                    <h1>Plano Anual</h1>
+                    <p>
+                        Nesse plano você usufrui do melhor do nosso software pagando uma assinatura anual. Nesse plano
+                        você economiza em relação ao plano semestral e paga R$ 2100,00 a cada um ano com direito a
+                        acesso de todo nosso software.
+                </div>
+                <button id="read_button">Ler mais</button>
+            </div>
+        </section>
+
+    </main>
+
+    <section id="contatos">
+        <footer>
+
+            <div id="footer_content">
+                <div id="footer_contacts">
+                    <h1 class="logo"> <span>Clin</span>Ware</h1>
+                    <p>Sejam bem-vindos!</p>
+                    <div id="footer_social_media">
+                        <a href="#" class="footer-link" id="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="footer-link" id="facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="footer-link" id="wpp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                <ul class="footer-list">
+                    <li>
+                        <h3>Curiosidades</h3>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Tech</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Aventuras</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Músicas</a>
+                    </li>
+                </ul>
+                <ul class="footer-list">
+                    <li>
+                        <h3>Diversidades</h3>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">App</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Desktop</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Cloud</a>
+                    </li>
+                </ul>
+
+                <div id="footer_subscribe">
+                    <h3>Dúvidas</h3>
+                    <p>Se tiver alguma dúvida, entre em contato em nosso email!</p>
+                    <div id="input_group">
+                        <input type="email" id="email">
+                        <button>
+                            <i class="fa-regular fa-envelope"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="footer_copyright">
+                &#169
+                2023 All rights reserved
+            </div>
+        </footer>
+    </section>
+
+    <script src="src/js/landing.js"></script>
+</body>
+
+</html>
